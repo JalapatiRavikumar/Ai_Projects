@@ -1,3 +1,4 @@
+// Backend entrypoint
 import express from "express";
 import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
@@ -41,3 +42,5 @@ app.listen(PORT, () => {
 	console.log("Server is running on http://localhost:" + PORT);
 	connectDB();
 });
+
+export default app;

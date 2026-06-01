@@ -27,3 +27,5 @@ dist-ssr
 
 # Local tunnel binary (do not commit)
 cloudflared.exe
+
+.vercel
