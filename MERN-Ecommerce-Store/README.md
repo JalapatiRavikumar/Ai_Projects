@@ -5,8 +5,7 @@ A premium, state-of-the-art full-stack eCommerce platform built using the **MERN
 ---
 
 ### 🌐 Live Demo & Resources
-* **Live Web App:** [https://ecommerce-frontend-gamma-neon.vercel.app/](https://ecommerce-frontend-gamma-neon.vercel.app/)
-* **Video Tutorial on YouTube:** [Watch the Tutorial](https://youtu.be/sX57TLIPNx8)
+* **Live Web App:** https://media-ministries-fragrances-wma.trycloudflare.com/
 
 > [!NOTE]
 > A single optimized service handles both the React frontend (`/`) and the Express REST API (`/api`). This allows unified CORS mapping and seamless single-origin requests.
