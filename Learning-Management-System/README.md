@@ -2,7 +2,7 @@
 
 ## 🚀 Live Demo
 
-**App (open this):** https://farmers-align-wizard-endorsement.trycloudflare.com
+**App (open this):** [https://media-ministries-fragrances-wma.trycloudflare.com](https://media-ministries-fragrances-wma.trycloudflare.com)
 
 **Demo admin login:** `admin@gmail.com` / `admin123`
 
