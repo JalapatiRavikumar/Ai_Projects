@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "buildCommand": "cd frontend && npm install && npm run build",
+  "outputDirectory": "frontend/build",
+  "build": {
+    "env": {
+      "NODE_OPTIONS": "--openssl-legacy-provider"
+    }
+  },
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "https://fullstack-ecommerce-api.vercel.app/api/$1" },
+    { "source": "/account/(.*)", "destination": "https://fullstack-ecommerce-api.vercel.app/account/$1" },
+    { "source": "/payments/(.*)", "destination": "https://fullstack-ecommerce-api.vercel.app/payments/$1" },
+    { "source": "/images/(.*)", "destination": "https://fullstack-ecommerce-api.vercel.app/images/$1" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

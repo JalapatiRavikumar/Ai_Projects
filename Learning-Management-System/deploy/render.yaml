@@ -1,0 +1,58 @@
+# Render Blueprint for the Learning Management System
+# Deploys: MySQL (via a managed DB), Spring Boot backend, and the React frontend.
+#
+# How to use:
+# 1. Push this project to GitHub.
+# 2. Go to https://dashboard.render.com  ->  New  ->  Blueprint.
+# 3. Connect your GitHub repo. Render reads this file and provisions everything.
+# 4. After the backend deploys, copy its URL and set REACT_APP_API_BASE_URL
+#    on the frontend service (already wired below via fromService).
+
+databases:
+  - name: lms-mysql
+    plan: free
+    databaseName: lms
+    # Render's managed DB is PostgreSQL on the free tier. If you need MySQL,
+    # use an external provider (PlanetScale / Railway / Aiven) and set DB_URL,
+    # DB_USERNAME, DB_PASSWORD as environment variables on the backend service.
+
+services:
+  # ---------- Backend (Spring Boot) ----------
+  - type: web
+    name: lms-backend
+    runtime: docker
+    rootDir: backend
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /swagger-ui/index.html
+    envVars:
+      - key: DB_URL
+        sync: false   # set this to your external MySQL JDBC URL
+      - key: DB_USERNAME
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: ADMIN_EMAIL
+        value: admin@gmail.com
+      - key: ADMIN_PASSWORD
+        sync: false
+
+  # ---------- Frontend (React static site) ----------
+  - type: web
+    name: lms-frontend
+    runtime: static
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./build
+    envVars:
+      - key: REACT_APP_API_BASE_URL
+        fromService:
+          type: web
+          name: lms-backend
+          property: host
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html

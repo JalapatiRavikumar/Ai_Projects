@@ -1,0 +1,65 @@
+# === FullStack Ecommerce (Django + React) ===
+FullStack_Ecommerce_App/backend/env/
+FullStack_Ecommerce_App/backend/**/__pycache__/
+FullStack_Ecommerce_App/backend/**/*.pyc
+FullStack_Ecommerce_App/backend/db.sqlite3
+FullStack_Ecommerce_App/frontend/node_modules/
+FullStack_Ecommerce_App/frontend/build/
+
+# === eCommerce (Spring Boot + React) ===
+eCommerce-Application/frontend/node_modules/
+eCommerce-Application/frontend/build/
+eCommerce-Application/frontend/.env*.local
+eCommerce-Application/frontend/npm-debug.log*
+
+eCommerce-Application/eCommersApp/target/
+eCommerce-Application/eCommersApp/.classpath
+eCommerce-Application/eCommersApp/.project
+eCommerce-Application/eCommersApp/.settings/
+eCommerce-Application/eCommersApp/logs/
+
+# eCommerce-Application/eCommersApp/src/main/resources/static/**
+# !eCommerce-Application/eCommersApp/src/main/resources/static/.gitkeep
+
+# === Umbrella repo (other projects) ===
+node_modules/
+dist/
+build/
+.pnp
+.pnp.js
+
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+.output/
+.nuxt/
+.next/
+
+/coverage
+
+.idea/
+.vscode/
+*.swp
+*.swo
+*.iml
+.DS_Store
+Thumbs.db
+
+*.tmp
+.cache/
+.npm
+.eslintcache
+
+.vercel/
+**/node_modules
+**/.env
+**/firebaseServiceAccountKey.json

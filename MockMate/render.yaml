@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: mockmate-fullstack
+    env: node
+    plan: free
+    region: oregon
+    buildCommand: npm install && cd frontend && npm install && npm run build && cd .. && cd backend && npm install
+    startCommand: cd backend && node server.js
+    envVars:
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000

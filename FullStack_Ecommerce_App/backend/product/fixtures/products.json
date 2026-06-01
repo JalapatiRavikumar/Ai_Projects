@@ -1,0 +1,90 @@
+[
+{
+  "model": "product.product",
+  "pk": 2,
+  "fields": {
+    "name": "MacBook Pro",
+    "description": "Eighth-generation quad-core Intel Core i5 processor, Brilliant Retina display with True Tone technology, Backlit Magic Keyboard Touch Bar and Touch ID Intel Iris Plus Graphics 645 Ultra-fast SSD Two Thunderbolt 3 (USB-C) ports Up to 10 hours of battery life 802.11ac Wi-Fi Force Touch trackpad",
+    "price": "124999.99",
+    "stock": true,
+    "image": "laptop_W0rdEyw.jpg"
+  }
+},
+{
+  "model": "product.product",
+  "pk": 3,
+  "fields": {
+    "name": "Playstation 5",
+    "description": "Experience lightning fast loading with an ultra-high speed SSD, deeper immersion with support for haptic feedback, adaptive triggers and 3D Audio, and an all-new generation of incredible PlayStation® games.",
+    "price": "30000.00",
+    "stock": true,
+    "image": "Playstation_5_dCJyLre.jpg"
+  }
+},
+{
+  "model": "product.product",
+  "pk": 4,
+  "fields": {
+    "name": "Bolt Headphones",
+    "description": "Fire-Boltt Blast 1300 On-Ear Metal Finish Wireless Bluetooth Over The Ear Headphone, 18-Hour Playtime with in-Built Mic, 40mm Driver with HD Sound, Deep Bass & Ultra-Soft Ear Cushions (Black)",
+    "price": "1200.99",
+    "stock": true,
+    "image": "bolt_headphones_rKKjIIT.jpg"
+  }
+},
+{
+  "model": "product.product",
+  "pk": 5,
+  "fields": {
+    "name": "Computer Chairs",
+    "description": "E-trend furniture™ - Office Chair Study Chair Work from Home Chair Computer Chair Lumbar Support, Black",
+    "price": "5999.99",
+    "stock": true,
+    "image": "computer_chair_WX9xOos.jpg"
+  }
+},
+{
+  "model": "product.product",
+  "pk": 6,
+  "fields": {
+    "name": "Gaming Mouse",
+    "description": "Logitech G102 Light Sync Gaming Mouse with Customizable RGB Lighting, 6 Programmable Buttons, Gaming Grade Sensor, 8 k dpi Tracking,16.8mn Color, Light Weight (Black)",
+    "price": "799.99",
+    "stock": false,
+    "image": "gaming_mouse.jpg"
+  }
+},
+{
+  "model": "product.product",
+  "pk": 21,
+  "fields": {
+    "name": "Colour Pencils",
+    "description": "The Green Chapter - Colour Paper Pencils for kids With Seed Pencil Gift Box Set - Pack of 10",
+    "price": "100.00",
+    "stock": true,
+    "image": "pencils.jpg"
+  }
+},
+{
+  "model": "product.product",
+  "pk": 22,
+  "fields": {
+    "name": "Apple Ipad",
+    "description": "2020 Apple iPad with A12 Bionic chip (10.2-inch/25.91 cm, Wi-Fi + Cellular, 32GB) - Space Grey (8th Generation)",
+    "price": "38999.99",
+    "stock": true,
+    "image": "apple_ipad_0UhZVkV.jpg"
+  }
+},
+{
+  "model": "product.product",
+  "pk": 23,
+  "fields": {
+    "name": "Wireless Keyboard",
+    "description": "Rechargeable Wireless Keyboard and Mouse, seenda Ultra Thin Low Profile Cordless Keyboard and Mouse Combo with Number Pad for Windows Laptop Computer-Space Gray",
+    "price": "2617.29",
+    "stock": true,
+    "image": "keyboard_6I3SnA1.jpg"
+  }
+}
+]

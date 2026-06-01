@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: fullstack-ecommerce-app
+    runtime: python
+    plan: free
+    region: oregon
+    rootDir: FullStack_Ecommerce_App
+    buildCommand: chmod +x ./build.sh && ./build.sh
+    startCommand: cd backend && gunicorn my_project.wsgi:application --bind 0.0.0.0:$PORT --workers 2 --timeout 120
+    healthCheckPath: /api/products/
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.0"
+      - key: DEBUG
+        value: "false"
+      - key: JWT_SECRET
+        sync: false
+      - key: STRIPE_SECRET_KEY
+        sync: false

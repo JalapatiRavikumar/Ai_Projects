@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "nunito", sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-display);
+  }
+
+  body {
+    background-color: #fcfbfc;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom scrollbar styling for WebKit browsers */
+/* Hide Scrollbar Globally */
+::-webkit-scrollbar {
+  display: none !important;
+}
+
+* {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+@layer utilities {
+
+  /* Animate text with a shine effect */
+  @keyframes text-shine {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
+  .animate-text-shine {
+    animation: text-shine 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes blob1 {
+
+    0%,
+    100% {
+      transform: translate(0px, 0px) scale(1);
+    }
+
+    33% {
+      transform: translate(30px, -60px) scale(1.1);
+    }
+
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+  }
+
+  @keyframes blob2 {
+
+    0%,
+    100% {
+      transform: translate(0px, 0px) scale(1);
+    }
+
+    33% {
+      transform: translate(-40px, 60px) scale(1.05);
+    }
+
+    66% {
+      transform: translate(20px, -40px) scale(0.95);
+    }
+  }
+
+  @keyframes blob3 {
+
+    0%,
+    100% {
+      transform: translate(0px, 0px) scale(1);
+    }
+
+    33% {
+      transform: translate(20px, 140px) scale(1.15);
+    }
+
+    66% {
+      transform: translate(-30px, -30px) scale(0.85);
+    }
+  }
+
+  .animate-blob1 {
+    animation: blob1 8s ease-in-out infinite;
+  }
+
+  .animate-blob2 {
+    animation: blob2 10s ease-in-out infinite;
+  }
+
+  .animate-blob3 {
+    animation: blob3 12s ease-in-out infinite;
+  }
+
+  /* Animations for LandingPage */
+  @keyframes blink {
+
+    0%,
+    100% {
+      border-color: transparent
+    }
+
+    50% {
+      border-color: #333
+    }
+  }
+
+  .animate-blink {
+    animation: blink 1s steps(1) infinite;
+  }
+
+  @keyframes shine {
+    0% {
+      background-position: 200% 0;
+    }
+
+    100% {
+      background-position: -200% 0;
+    }
+  }
+
+  .animate-shine {
+    animation: shine 2s linear infinite;
+  }
+}
+
+.bg-dots-dark {
+  background-image: radial-gradient(#dadada31 1px, transparent 1px);
+  background-size: 25px 25px;
+  background-color: #020202;
+  /* Fallback/Base color */
+}
+
+@layer components {
+  .colorful-gradient-btn {
+    background: linear-gradient(90deg, #ff6a00, #ee0979, #00c3ff, rgb(0, 74, 25), rgb(0, 98, 80), #ff6a00);
+    background-size: 300% 100%;
+    background-position: 0% 0%;
+    transition: background-position 0.5s, box-shadow 0.3s, color 0.3s, transform 0.18s cubic-bezier(0.4, 0.2, 0.2, 1);
+  }
+
+  .colorful-gradient-btn:hover,
+  .colorful-gradient-btn:focus {
+    background-position: 100% 0;
+  }
+}
+
+
+.input-box {
+  @apply w-full flex justify-between gap-3 text-sm text-black bg-gray-50/20 rounded px-4 py-4 mb-3 mt-3 border border-gray-100/50 outline-none;
+}
+
+.btn-primary {
+  @apply w-full flex items-center justify-center gap-3 text-sm font-medium text-white bg-black p-[11px] rounded-full my-1 cursor-pointer;
+}
+
+.btn-small {
+  @apply flex items-center justify-center gap-3 bg-black text-sm font-semibold text-white px-7 py-2 rounded-lg hover:bg-black hover:text-white transition-colors
+}

@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c46518ce.css",
+    "main.js": "/static/js/main.5722940e.js",
+    "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
+    "static/media/paymentbg.webp": "/static/media/paymentbg.41124a062c3fec0a2991.webp",
+    "static/media/loginbg.webp": "/static/media/loginbg.39327957bbc11d0b8783.webp",
+    "static/media/loginbg1.webp": "/static/media/loginbg1.a5dbb9f56f9c65514099.webp",
+    "static/media/successbg.webp": "/static/media/successbg.d2750bf26f20315ee6a7.webp",
+    "static/media/Home_essentials.avif": "/static/media/Home_essentials.2be997de275b1a357a00.avif",
+    "static/media/Oil_and_ghee.avif": "/static/media/Oil_and_ghee.9e1f000dfa114b4424ff.avif",
+    "static/media/Atta_and_dals.avif": "/static/media/Atta_and_dals.7039c4c1300f5c73f4e5.avif",
+    "static/media/men_fashion.avif": "/static/media/men_fashion.933671bd73d31a1a5e8e.avif",
+    "static/media/Cleaning_essentials.avif": "/static/media/Cleaning_essentials.2f6d4d9bd06a713d9f36.avif",
+    "static/media/Laptops_and_Tablets.avif": "/static/media/Laptops_and_Tablets.34e3cc8565cc246d3229.avif",
+    "static/media/Smart_Televisions.avif": "/static/media/Smart_Televisions.8a8f07d1a480b35a42ab.avif",
+    "static/media/Kitchen_must_haves.avif": "/static/media/Kitchen_must_haves.7b02d44bc79d304cff21.avif",
+    "static/media/kids_fashion.avif": "/static/media/kids_fashion.46bd0600138dfb82b412.avif",
+    "static/media/Beauty_and_personal_care.avif": "/static/media/Beauty_and_personal_care.29c55de3d168564d2b3b.avif",
+    "index.html": "/index.html",
+    "main.c46518ce.css.map": "/static/css/main.c46518ce.css.map",
+    "main.5722940e.js.map": "/static/js/main.5722940e.js.map",
+    "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c46518ce.css",
+    "static/js/main.5722940e.js"
+  ]
+}
